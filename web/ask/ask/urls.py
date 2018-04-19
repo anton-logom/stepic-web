@@ -21,13 +21,13 @@ from ask.views import found, not_found
 h = bytes("dfdf", encoding="utf8")
 urlpatterns = [
 
-    url(r'^$', found),
+    url(r'^$', include('qa.urls')),
 
-    url(r'^login/', found),
-    url(r'^signup/', found),
-    url(r'^ask/', found),
-    url(r'^popular/', found),
-    url(r'^new/', found),
+    url(r'^login/', include('qa.urls')),
+    url(r'^signup/', include('qa.urls')),
+    url(r'^ask/', include('qa.urls')),
+    url(r'^popular/', include('qa.urls')),
+    url(r'^new/', include('qa.urls')),
 
     url(r'^admin/', admin.site.urls),
     url(r'^question/', include('qa.urls')),
