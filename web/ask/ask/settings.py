@@ -25,7 +25,7 @@ SECRET_KEY = '9w$))$61cjq6-p_=9imayctkk25h9nfqam=s37&!bid=cbe_e@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
